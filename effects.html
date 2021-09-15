@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+               $("#box").animate({
+                   width:"500px",
+                   height:"500px",
+                   marginLeft:"500px",
+                   borderwidth:"500px"
+               })
+            })
+            $("#btn2").click(function(){
+              $("p").fadeToggle("fast");
+            })
+
+            
+        });
+    </script>
+</head>
+<body>
+    <p>Hello</p>
+    <p id="box" style="border: solid;">Hello</p>
+    <button type="button" id="btn">Click Here </button>
+    <button type="button" id="btn2">CLICK HERE </button>
+    
+</body>
+</html>

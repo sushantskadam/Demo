@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src='main.js'></script>
+        <script>
+            $(document).ready(function(){
+             $("#btn").click(function(){
+                var mrk1 = $("#m1").val();
+                var mrk2 = $("#m2").val();
+                var mrk3 = $("#m3").val();
+                var mrk4 = $("#m4").val();
+                var mrk5 = $("#m5").val();
+                var total = Number(mrk1) + Number(mrk2) + Number(mrk3) + Number(mrk4) + Number(mrk5);
+                var perc = Number(total)/5;
+                if(perc>80){
+                    var grade = "A";
+                }
+                else if(perc>59 && perc<80){
+                   
+                    var grade = "B";
+                }
+                else if(perc>44 && perc<60 ){
+                    
+                    var grade = "C";
+                }
+                else{
+                    var grade = "F";
+                }
+                $("#total").val(total);
+                $("#perc").val(perc);
+                $("#grade").val(grade);
+            })
+
+
+            
+        });
+            
+        </script>
+    </head>
+    <body>
+        <h1>Enter your marks</h1>
+        English: <input type="text" id="m1"><br><br>
+        Hindi: <input type="text" id="m2"><br><br>
+        Science: <input type="text" id="m3"><br><br>
+        Sst: <input type="text" id="m4"><br><br>
+        Maths: <input type="text" id="m5"><br><br>
+        Total: <input type="text" id="total"><br><br>
+        Percentage: <input type="text" id="perc"><br><br>
+        Grade: <input type="text" id="grade"><br><br>
+        <input type="button" id="btn" value="Submit" > 
+        
+    </body>
+
+</html>

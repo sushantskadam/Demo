@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
+    <script>
+        $(function() {  
+            $( "#accordion" ).accordion();  
+        });
+    </script>
+</head>
+<body>
+    <div id="accordion">  
+        <h3>What is JavaScript?</h3>  
+        <div>  
+          <p>  
+            JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.
+          </p>    
+        </div>  
+        <h3>What is JQuery?</h3>  
+        <div>  
+          <p>  
+            Query is a lightweight, "write less, do more", JavaScript library.
+
+            The purpose of jQuery is to make it much easier to use JavaScript on your website.
+            
+            jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+            
+            jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.  
+          </p>  
+        </div>  
+        <h3>What is Anguler?</h3>  
+        <div>  
+          <p>  
+            Angular is a development platform, built on TypeScript. As a platform, Angular includes:
+            <ul>
+            <li>A component-based framework for building scalable web applications</li>
+            <li>A collection of well-integrated libraries that cover a wide variety of features, including routing, forms management, client-server communication, and more</li>
+            <li>A suite of developer tools to help you develop, build, test, and update your code</li>
+          </ul>
+          </p>  
+        </div>  
+        <h3>What is React?</h3>  
+        <div>  
+            <p>
+            React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications. However, React is only concerned with state management and rendering that state to the DOM, so creating React applications usually requires the use of additional libraries for routing, as well as certain client-side functionality. 
+            </p>
+        </div>  
+        </div>  
+        
+        <!-- autocomplete -->
+        <label>Enter Your Fav Technology : </label>
+      
+        <input id="autocompleteInput">
+    
+        <script> 
+            var tags = [ 
+                "jQuery", "java", "php",
+                "MySQL", "javascript", 
+                "React", "C#", "Anguler", "MongoDB" 
+            ];
+            
+            $("#autocompleteInput").autocomplete({
+                source: tags
+            });
+        </script>
+</body>
+</html>

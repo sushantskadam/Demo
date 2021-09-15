@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                
+                $("#pid").append(" Sushant");
+                $("#pid").prepend("Hi ");
+                $("#divid").empty();
+                $("button").remove();
+                $("a").removeAttr("href");
+            })
+            
+        })
+    </script>
+</head>
+<body>
+    <p id="pid">Hello</p>
+    <div id="divid">
+        <p>HELLO</p>
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente doloribus, dolore suscipit, repellat beatae magni blanditiis necessitatibus sed tempora nisi reprehenderit aperiam nulla iusto dolores unde ipsum! Molestiae, unde dolore.</div>
+         <a href="#">CLICK HERE</a><br><br>
+     <button type="button" id="btn">Click Here </button>
+   
+</body>
+</html>

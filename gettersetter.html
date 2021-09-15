@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                // var pdata=$("p").text();
+                // alert(pdata);
+                // $("p").html("<i>Sushant Kadam</i>");
+                var name = $("#name").val();
+                $("p").text(name);
+            })
+            $("#xyz").click(function(){
+                var pid=$(this).attr('pid');
+                alert(pid);
+            })
+        })
+    </script>
+</head>
+<body>
+    <p>Hello</p>
+    <input type="text" id="name">
+    <button type="button" id="btn">Click Here </button>
+    <a href="#" pid="1" id="xyz">CLICK HERE</a>
+</body>
+</html>
